@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>الإدارة العامة للمرور - KR</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0d1b2a;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: #1b263b;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+section {
+    padding: 30px;
+}
+
+button {
+    background: #00b4d8;
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#employeeBox {
+    display: none;
+    background: #1b263b;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+</style>
+
+<script>
+function showEmployee() {
+    document.getElementById("employeeBox").style.display = "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+🚓 الإدارة العامة للمرور - سيرفر KR
+</header>
+
+<section>
+
+<h2>📋 الخدمات</h2>
+
+<button onclick="showEmployee()">👮‍♂️ الموظفين</button>
+
+<div id="employeeBox">
+    <h3>بيانات الموظف</h3>
+    <p>الاسم: مقرن</p>
+    <p>الرتبة: عريف</p>
+    <p>القسم: المرور الميداني</p>
+    <p>الحالة: على رأس العمل</p>
+</div>
+
+</section>
+
+</body>
+</html>
